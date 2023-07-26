@@ -7,7 +7,7 @@
 
 
 body {
-    font-size:  1.2rem;
+    font-size:  2rem;
     font-family: 'Work Sans', sans-serif;
     min-height: 4000px;
 }
@@ -391,9 +391,9 @@ body {
 }
 }
 /* Mobile Phone  */
-@media (max-width: 576px){
+@media (max-width: 650px){
     html{
-        font-size: 50%;
+        font-size: 60%;
     }
 
 
