@@ -58,30 +58,42 @@
 
 
 
+    
     <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
       <div class="container">
         <a class="navbar-brand" href="#">Faik & Elsa</a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Faik & Elsa</text-align></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <div class="navbar-nav ms-auto">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
               <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#info">Info</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#story">Story</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#rsvp">RSVP</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#gifts">Gifts</a>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
+    
+
+
+    
+
 
 
     <section id="home" class="home" >
@@ -282,7 +294,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <br><br><br><div class="rsvp-container">
+  <div class="rsvp-container">
     <p>Silakan konfirmasi kehadiran Anda pada acara kami:</p>
     <form action="submit_rsvp.php" method="rsvp">
       <label for="name">Nama Anda:</label>
@@ -300,9 +312,75 @@
 </section>
 
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amplop Digital dengan Accordion dan Foto Rekening</title>
+  <link rel="stylesheet" href="amplop.css">
+</head>
+
+<body>
+  <section id="gifts" class="gifts">
+    <section class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <br><br><br><br>
+          <section id="wedding" class="wedding">
+            <p>Wedding Gifts</p>
+          </section>
+          <br>
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header rekening-bca" onclick="toggleAccordion(this)">.</div>
+              <div class="accordion-content">
+                <img src="img/bca.png" alt="Rekening Bca">
+                <p class="rekening-number" data-rekening="1234 5678 9012 3456">
+                  <br>*klik untuk mengcopy rekening*
+                </p>
+                <button class="copy-button" onclick="copyRekening('rekening-bca')">Copy</button>
+                <p>Terima kasih banyak atas hadiahnya! Saya sangat menghargai perhatian dan kebaikan hati Anda.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header rekening-bni" onclick="toggleAccordion(this)">.</div>
+              <div class="accordion-content">
+                <img src="img/bni.png" alt="Rekening Bni">
+                <p class="rekening-number" data-rekening="1234 5678 9012 3456">
+                  <br>*klik untuk mengcopy rekening*
+                </p>
+                <button class="copy-button" onclick="copyRekening('rekening-bni')">Copy</button>
+                <p>Terima kasih banyak atas hadiahnya! Saya sangat menghargai perhatian dan kebaikan hati Anda.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header rekening-mandiri" onclick="toggleAccordion(this)">.</div>
+              <div class="accordion-content">
+                <img src="img/mandiri.png" alt="Rekening Mandiri">
+                <p class="rekening-number" data-rekening="1234 5678 9012 3456">
+                  <br>*klik untuk mengcopy rekening*
+                </p>
+                <button class="copy-button" onclick="copyRekening('rekening-mandiri')">Copy</button>
+                <p>Terima kasih banyak atas hadiahnya! Saya sangat menghargai perhatian dan kebaikan hati Anda.</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- Tambahkan lebih banyak item accordion di sini jika diperlukan -->
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
 
 
-    
+
 
 
 

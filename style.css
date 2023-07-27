@@ -68,31 +68,29 @@ body {
 
 
 .mynavbar {
-    background-color: rgba(255,255,255,0,3) ! important;
+    background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(3px);
-}
-
-
-.mynavbar .navbar-brand,
-.mynavbar .offcanvas-title {
+  }
+  
+  .mynavbar .navbar-brand {
     font-family: 'Kaushan Script', cursive;
     font-size: 2rem;
-}
-
-.mynavbar .offcanvas {
-    height: 100vh;
-}
-
-.mynavbar .nav-link {
-    font-family:'Work Sans', sans-serif;
+  }
+  
+  .mynavbar .navbar-nav {
+    margin-left: auto;
+  }
+  
+  .mynavbar .nav-link {
+    font-family: 'Work Sans', sans-serif;
     text-transform: uppercase;
-     
-}
+  }
+  
 
 
 .home{
 background-image: url(img/faik2.png);
-background-size: cover;
+background-size: contain;
 min-height: 100vh;
 margin-top: -6rem;
 padding-top: 15rem;
@@ -233,6 +231,7 @@ padding-bottom: 5rem;
 
 .story{
     background-image: url(img/bgcafe2.jpg);
+    background-size: contain;
 }
 
 .gallery {
@@ -288,32 +287,36 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
-    margin: 0;
   }
   
   .rsvp-container {
     max-width: 400px;
-    margin: 50px auto;
+    margin-top: 20px;
     padding: 20px;
     background-color: #fff;
-    border-radius: 5px;
+    border: 1px solid #d1d1d1 ;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: scale(0.8);
+    position: relative;
+    /*Tambahkanpropertiposition*/left: 50%;
+    /*Posisikanelemensejajardenganbagiankirihalaman*/transform: translateX(-50%);
+    
 }
   
   h1 {
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   
   label {
     display: block;
-    margin-top: 20px;
+    margin-top: 15px;
   }
   
   input, textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
@@ -335,20 +338,22 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
-  }
+    
+}
   
   input[type="submit"]:hover {
     background-color: #45a049;
   }
   
 .rsvp{
-    background-image: url(img/bgrsvp.jpg);
+    background-image: url(img/faik2.png);
     background-size: cover;
 }
 
 
 
 
+  
 
 
 
@@ -385,17 +390,14 @@ body {
         margin: 5px;
 }
 
-.mynavbar .nav-link {
-    font-size: 2rem;
-    text-align: center;  
-}
+
 }
 /* Mobile Phone  */
-@media (max-width: 650px){
+@media (max-width: 300px){
     html{
-        font-size: 60%;
+        font-size: 50%;
     }
-
+    
 
     .simply-countdown > .simply-section {
         padding: 45px;

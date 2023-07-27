@@ -1,0 +1,99 @@
+.gifts body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+  }
+
+.gifts {
+    background-image: url(img/bgamplop.jpg);
+    background-size: cover;
+    background-position: absolute;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+  .accordion-item {
+    width: 350px; /* Atur lebar elemen akordion */
+    border: 1px solid #d01eb8;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  
+  .accordion-header {
+    padding: 10px;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    font-family:'Kaushan Script', cursive;
+    border-top-left-radius: 5px; /* Atur radius sudut untuk header atas */
+    border-top-right-radius: 5px; /* Atur radius sudut untuk header atas */
+  }
+
+  .accordion-header.rekening-bca {
+    background-image: url(img/logo\ bca.png); /* Ganti dengan path gambar latar belakang untuk Rekening BCA */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .accordion-header.rekening-mandiri {
+    background-image: url(img/logo\ mandiri.png); /* Ganti dengan path gambar latar belakang untuk Rekening Mandiri */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .accordion-header.rekening-bni {
+    background-image: url(img/logo\ BNI.png); /* Ganti dengan path gambar latar belakang untuk Rekening BNI */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-bottom-left-radius: 5px; /* Atur radius sudut untuk konten bawah */
+    border-bottom-right-radius: 5px; /* Atur radius sudut untuk konten bawah */
+  }
+  
+  .accordion-item.active .accordion-content {
+    display: block;
+  }
+  
+  .accordion-content img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .wedding {
+    color: var(--pink);
+    font-family: 'Sacramento';
+    font-size: 6rem;
+    font-weight: Bold;
+  }
+
+  /* Tambahkan gaya untuk tombol copy */
+.copy-button {
+    display: block;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
